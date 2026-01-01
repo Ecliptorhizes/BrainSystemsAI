@@ -2,7 +2,7 @@
 
 This repository is a **step-by-step computational neuroscience project** focused on simulating a **biologically inspired artificial brain** using software only (no electronics or hardware).
 
-The goal is to build a **learning, adaptive neural system** from first principles—starting simple and growing in complexity—while maintaining clarity, correctness, and scientific grounding.
+The goal is to build a **learning, adaptive neural system** from first principles starting simple and growing in complexity while maintaining clarity, correctness, and scientific grounding.
 
 This project emphasizes:
 - Understanding how learning emerges from connections
