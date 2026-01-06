@@ -1,0 +1,37 @@
+# Sparse Reward Configuration
+# Environment with sparse reward signal
+
+name: "SparseRewardEnvironment"
+description: "Grid world with sparse rewards at goal locations"
+
+world:
+  type: "grid"
+  dimensions: [ 20, 20 ]
+  total_states: 400
+
+sensory:
+  encoding: "one_hot"
+  output_shape: [ 20, 20 ]
+  input_range: [ 0, 1 ]
+
+actions:
+  num_actions: 4
+  descriptions:
+    0: "move_up"
+    1: "move_down"
+    2: "move_left"
+    3: "move_right"
+
+reward:
+  type: "sparse"
+  min_reward: 0.0
+  max_reward: 1.0
+  distribution: "goal_locations_only"
+  goal_reward: 1.0
+  step_reward: 0.0
+
+metadata:
+  author: "BrainSystemsAI"
+  version: "1.0"
+  creation_date: "2026-01-06"
+  purpose: "Environment for testing sparse reward learning algorithms"

@@ -1,0 +1,35 @@
+# Basic Grid World Configuration
+# A simple 2D grid environment for foundational experiments
+
+name: "BasicGridWorld"
+description: "10x10 grid with 4-directional movement and discrete rewards"
+
+world:
+  type: "grid"
+  dimensions: [ 10, 10 ]
+  total_states: 100
+
+sensory:
+  encoding: "one_hot"
+  output_shape: [ 10, 10 ]
+  input_range: [ 0, 1 ]
+
+actions:
+  num_actions: 4
+  descriptions:
+    0: "move_up"
+    1: "move_down"
+    2: "move_left"
+    3: "move_right"
+
+reward:
+  type: "discrete"
+  min_reward: -1
+  max_reward: 1.0
+  distribution: "goal_based"
+
+metadata:
+  author: "BrainSystemsAI"
+  version: "1.0"
+  creation_date: "2026-01-06"
+  purpose: "Baseline environment for testing neural agents"
