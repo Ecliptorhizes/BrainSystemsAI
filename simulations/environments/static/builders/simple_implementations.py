@@ -61,13 +61,14 @@ class SimpleGridEnvironment(StaticEnvironment):
     
     def get_sensory_input(self) -> np.ndarray:
         """
-        Get one-hot encoded sensory input.
+        Get one-hot encoded sensory input with goal awareness.
         
         Returns:
-            np.ndarray: One-hot encoded grid showing agent position
+            np.ndarray: One-hot encoded grid showing agent and goal positions
         """
         sensory = np.zeros(self.metadata.sensory_output_shape, dtype=np.float32)
         sensory[self._agent_position] = 1.0
+        sensory[self.goal_position] = 0.5  # Mark goal with lower value to avoid confusion
         return sensory
     
     def compute_reward(self, action: int) -> float:
