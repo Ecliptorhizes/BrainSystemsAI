@@ -60,7 +60,12 @@ See [docs/roadmap.md](docs/roadmap.md) for details.
 
 ## Getting Started
 
-1. Install dependencies: `pip install -r requirements.txt`
+1. Create a virtual environment and install dependencies:
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate   # On Windows: .venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
 2. Run with synthetic signals (no hardware): `python -m experiments.calibration --synthetic`
 3. Calibrate with your EEG: `python -m experiments.calibration`
 4. Control robot: `python -m control.run`
