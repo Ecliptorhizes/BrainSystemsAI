@@ -1,0 +1,21 @@
+# EEG device configuration
+# Adjust for your hardware (OpenBCI, Emotiv, etc.)
+
+device:
+  type: "openbci"  # openbci | emotiv | synthetic
+  sampling_rate: 250  # Hz
+  channels: 8
+  channel_names:
+    - F3
+    - F4
+    - C3
+    - C4
+    - P3
+    - P4
+    - O1
+    - O2
+
+preprocessing:
+  bandpass_low: 8   # Hz (motor imagery)
+  bandpass_high: 30
+  notch_freq: 60    # 50 for EU, 60 for US

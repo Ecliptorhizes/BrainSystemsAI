@@ -1,0 +1,13 @@
+# Calibration / motor imagery experiment config
+
+classes:
+  - left_hand
+  - right_hand
+  # - feet  # optional third class
+
+trial:
+  duration_sec: 4.0
+  cue_duration_sec: 1.0
+  rest_between_sec: 2.0
+
+trials_per_class: 20  # total = trials_per_class * len(classes)

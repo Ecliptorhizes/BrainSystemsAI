@@ -1,0 +1,14 @@
+# Robot interface configuration
+
+robot:
+  type: "simulated"  # simulated | serial | ros | http
+  # serial:
+  #   port: "/dev/ttyUSB0"
+  #   baud: 115200
+  # ros:
+  #   topic: "/cmd_vel"
+
+command_mapping:
+  left_hand: "move_left"
+  right_hand: "move_right"
+  feet: "grasp"  # if using 3 classes
