@@ -1,4 +1,4 @@
-# BrainSystemsAI — Brain-Controlled Robotics
+# BrainSystemsAI — Brain-Controlled Robotics (WORKING PROGRESS - VIDEO SOON)
 
 Control robots with your brain using **motor imagery** (the "muscle memory" in your mind). This project builds a **Brain-Computer Interface (BCI)** that reads brain signals from electrodes on your head and translates them into robot commands.
 
