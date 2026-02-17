@@ -18,8 +18,6 @@ When you imagine moving your hand left, the robot moves left. When you imagine g
 
 This is a **personal project** — a fun exploration of brain-computer interfaces and robotics. The work is **open for others to use and build on**; I share it so people outside my immediate community can see the discoveries and contribute or adapt the ideas.
 
-I also plan to **publish** the methodology and results as the project matures, so the research can reach a broader audience.
-
 ---
 
 ## Project Structure
